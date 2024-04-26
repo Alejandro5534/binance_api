@@ -1,8 +1,11 @@
+import 'package:binance_api/core/data/local/hive_init.dart';
 import 'package:binance_api/core/router/router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await HiveInit.initializeHive();
   runApp(const ProviderScope(child: MyApp()));
 }
 

@@ -6,20 +6,6 @@ part of 'page_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$pageHash() => r'aa744a3355a9e2a3eace5e758dc948e3e77dc46c';
-
-/// See also [page].
-@ProviderFor(page)
-final pageProvider = AutoDisposeProvider<PageController>.internal(
-  page,
-  name: r'pageProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$pageHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
-
-typedef PageRef = AutoDisposeProviderRef<PageController>;
 String _$pageCountHash() => r'57772fe8149f158942088d5a362c0dcc338653e1';
 
 /// See also [PageCount].

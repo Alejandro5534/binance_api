@@ -1,4 +1,6 @@
-import 'package:binance_api/features/auth/login_screen.dart';
+import 'package:binance_api/features/auth/aplication/presentation/auth_screen.dart';
+import 'package:binance_api/features/auth/aplication/presentation/widgets/login_view.dart';
+import 'package:binance_api/features/home/aplication/presentation/home_screen.dart';
 import 'package:binance_api/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -27,10 +29,26 @@ GoRouter router(RouterRef ref) {
       ),
     ),
     GoRoute(
-      path: '/login',
+      path: '/auth',
       pageBuilder: (context, state) => CustomTransitionPage<void>(
         key: state.pageKey,
-        child: const LoginScreen(),
+        child: const AuthScreen(),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          return FadeTransition(
+            opacity: animation.drive(CurveTween(
+                curve:
+                    Curves.easeInOut)), // Personalizar la curva de la animación
+            child: child,
+          );
+        },
+        transitionDuration: const Duration(milliseconds: 1000),
+      ),
+    ),
+    GoRoute(
+      path: '/home',
+      pageBuilder: (context, state) => CustomTransitionPage<void>(
+        key: state.pageKey,
+        child: const HomeScreen(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(
             opacity: animation.drive(CurveTween(

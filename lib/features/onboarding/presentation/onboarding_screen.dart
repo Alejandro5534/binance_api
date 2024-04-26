@@ -2,7 +2,7 @@ import 'package:binance_api/core/router/router.dart';
 import 'package:binance_api/features/onboarding/presentation/widgets/first_page.dart';
 import 'package:binance_api/features/onboarding/presentation/widgets/second_page.dart';
 import 'package:binance_api/features/onboarding/presentation/widgets/third_page.dart';
-import 'package:binance_api/features/onboarding/provider/page_provider.dart';
+import 'package:binance_api/features/onboarding/providers/page_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -11,7 +11,7 @@ class OnboardingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final PageController pageController = ref.watch(pageProvider);
+    final PageController pageController = PageController();
     final int countPage = ref.watch(pageCountProvider);
     final router = ref.watch(routerProvider);
     return Scaffold(
@@ -55,7 +55,7 @@ class OnboardingScreen extends ConsumerWidget {
                   child: countPage == 2
                       ? ElevatedButton(
                           onPressed: () {
-                            router.go('/login');
+                            router.go('/auth');
                           },
                           child: const Text('Start'))
                       : IconButton(
@@ -77,7 +77,7 @@ class OnboardingScreen extends ConsumerWidget {
                   top: 20,
                   child: TextButton(
                     onPressed: () {
-                      router.go('/login');
+                      router.go('/auth');
                     },
                     child: const Text('Skip'),
                   ),
