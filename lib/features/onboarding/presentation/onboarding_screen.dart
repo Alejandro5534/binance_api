@@ -63,7 +63,6 @@ class OnboardingScreen extends ConsumerWidget {
                             pageController.nextPage(
                                 duration: const Duration(milliseconds: 500),
                                 curve: Curves.easeIn);
-                            print(pageController.page);
                           },
                           icon: const Icon(
                             Icons.arrow_forward_ios_outlined,
@@ -73,7 +72,7 @@ class OnboardingScreen extends ConsumerWidget {
                         ),
                 ),
                 Positioned(
-                  right: 30,
+                  right: 15,
                   top: 20,
                   child: TextButton(
                     onPressed: () {

@@ -1,5 +1,4 @@
 import 'package:binance_api/features/auth/aplication/presentation/auth_screen.dart';
-import 'package:binance_api/features/auth/aplication/presentation/widgets/login_view.dart';
 import 'package:binance_api/features/home/aplication/presentation/home_screen.dart';
 import 'package:binance_api/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:flutter/material.dart';

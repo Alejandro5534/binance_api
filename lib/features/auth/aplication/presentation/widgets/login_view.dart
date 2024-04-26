@@ -4,7 +4,6 @@ import 'package:binance_api/features/auth/domain/form_validate.dart';
 import 'package:binance_api/features/auth/domain/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hive/hive.dart';
 import 'package:toastification/toastification.dart';
 
 class LoginView extends ConsumerWidget with Validators {

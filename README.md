@@ -21,13 +21,13 @@ To install the CryptoViewer app, follow these steps:
 2. Clone the repository to your local machine:
 
 ```
-git clone https://github.com/yourgithubusername/cryptoviewer.git
+git clone https://github.com/yourgithubusername/binance_api.git
 ```
 
 3. Navigate to the project directory:
 
 ```
-cd cryptoviewer
+cd binance_api
 ```
 
 4. Install all the necessary dependencies:
@@ -48,7 +48,7 @@ After installation, you can use the app to:
 
 - **Register** a new user account.
 - **Log in** using your credentials.
-- View **real-time charts** of various cryptocurrencies.
+- View **real-time chart** of cryptocurrency.
 
 ## Features
 - User registration and authentication.
@@ -58,22 +58,18 @@ After installation, you can use the app to:
 ## Dependencies
 - Flutter SDK
 - Binance API
-- `Dio` 
-- `riverpod_annotations`
 - `go_router`
-
-## Configuration
-To configure the app, you will need to:
-
-1. Obtain an API key from Binance:
-- Visit [Binance API Management](https://www.binance.com/en/support/faq/360002502072), create an account if you don't have one, and follow the instructions to obtain an API key.
-2. Insert your API key in the appropriate location in your Flutter app to ensure it can fetch data from Binance.
+- `flutter_riverpod`
+- `riverpod_annotation`
+- `hive`
+- `hive_flutter`
+- `path_provider`
+- `toastification`
+- `fl_chart`
+- `web_socket_channel`
 
 ## Documentation
 For more detailed documentation on the app's functionality and architecture, refer to the `docs` folder in the repository.
-
-## Contributors
-To contribute to this project, please fork the repository and propose your changes via a pull request.
 
 ## License
 CryptoViewer is released under the MIT License. See the `LICENSE` file in the repository for more details.

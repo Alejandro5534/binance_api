@@ -26,7 +26,7 @@ class FirstPage extends StatelessWidget {
             ),
           ),
           const Align(
-            alignment: Alignment(-0.6, 0.48),
+            alignment: Alignment(-0.4, 0.52),
             child: SizedBox(
               width: 320,
               child: Text(

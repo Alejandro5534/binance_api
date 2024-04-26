@@ -19,14 +19,14 @@ class ThirdPage extends StatelessWidget {
             ),
           ),
           const Align(
-            alignment: Alignment(-0.4, 0.3),
+            alignment: Alignment(0, 0.3),
             child: Text(
               'Transparent Community',
-              style: TextStyle(fontSize: 34),
+              style: TextStyle(fontSize: 30),
             ),
           ),
           const Align(
-            alignment: Alignment(-0.6, 0.48),
+            alignment: Alignment(0, 0.6),
             child: SizedBox(
               width: 320,
               child: Text(

@@ -19,7 +19,7 @@ class SecondPage extends StatelessWidget {
             ),
           ),
           const Align(
-            alignment: Alignment(-0.72, -0.45),
+            alignment: Alignment(-0.72, -0.5),
             child: Text(
               'Enhance Producity',
               style: TextStyle(fontSize: 36),
